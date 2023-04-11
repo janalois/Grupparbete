@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 0.3fr 1.7fr 50px;
+  grid-template-columns: 0.2fr 0.6fr 0.2fr;
+  height: 100%;
+}
+
+.logo {
+  padding-left: 1%;
+  font-size: 28px;
+  color: #ecf0f1;
+}
+.dropbtn {
+  display: none;
+}
+.dropdown-content {
+  display: none;
+}
+
+nav {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: #1e272e;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+#headerimg {
+  border-bottom: solid 5px #ff3f34;
+  margin-top: 12px;
+  width: 100%;
+  height: 400px;
+}
+
+nav ul {
+  position: sticky;
+  top: 0;
+  background: #1e272e;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 4px 40px;
+  border-right: solid;
+  border-color: #ecf0f1;
+  border-width: 2px;
+  text-align: center;
+}
+
+nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+nav ul li:last-child {
+  border-right: none;
+}
+
+.side1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background: #ecf0f1;
+  background-color: #1e272e;
+  color: #ecf0f1;
+  text-align: center;
+}
+
+.side2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background: #ecf0f1;
+  background-color: #1e272e;
+  color: #ecf0f1;
+  text-align: center;
+}
+
+.main {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background: #ecf0f1;
+}
+
+footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background: #ecf0f1;
+  text-align: center;
+}
+
+#heading {
+  text-align: center;
+}
+
+.daniella {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("images/coldplay.jpg");
+  background-position: center 0%;
+  background-size: cover;
+  text-align: center;
+  font-family: comfortaa;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  padding-left: 50px;
+  font-weight: bold;
+}
+
+.marcus {
+  display: flex;
+  justify-content: left;
+  padding-left: 50px;
+  padding-bottom: 75px;
+  padding-top: 75px;
+  background-color: white;
+  background-image: url("images/bowie8.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(209, 205, 205);
+  font-family: comfortaa;
+}
+
+.daniel {
+  display: flex;
+  justify-content: right;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 25px;
+  padding-top: 50px;
+  background-color: white;
+  background-image: url("images/Mayer.webp");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  text-align: right;
+  color: rgb(195, 195, 195);
+}
+
+.sandra {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("images/postmalone.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: lightgrey;
+}
+
+.sandrah2 {
+  font-size: 50px;
+}
+
+.fidelia {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-image: url("images/lkp.png");
+  background-size: 100% 100%;
+}
+
+#fideliatxt {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Nedan följer stylingen för formulären*/
+#email {
+  text-align: center;
+}
+/*Styling för responsiv design*/
+@media only screen and (max-width: 768px) {
+  body {
+    background: #ecf0f1;
+  }
+
+  .side2 {
+    display: none;
+  }
+
+  #headerimg {
+    display: none;
+  }
+
+  .side1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background: #ecf0f1;
+    background-color: #ecf0f1;
+    color: black;
+    text-align: center;
+  }
+
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background: #ecf0f1;
+    text-align: center;
+    line-height: 100px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr 0.2fr;
+    grid-template-columns: 1fr;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .main {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background: #ecf0f1;
+  }
+  nav {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: #1e272e;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 12px;
+  }
+  nav ul {
+    display: none;
+  }
+
+  .daniella {
+    display: flex;
+    justify-content: center;
+    background-image: url("images/coldplay.jpg");
+    background-position: center 0%;
+    background-size: cover;
+    text-align: center;
+    font-family: comfortaa;
+
+    font-weight: bold;
+  }
+  /* Hamburgermenyns stylling */
+  .dropbtn {
+    display: block;
+    background-color: #ff3f34;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin-right: 40px;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #c42e26;
+  }
+}

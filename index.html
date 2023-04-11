@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Titel</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--Grid container-->
+      <nav>
+        <h3 class="logo"><span style="color: #ff3f34">NAV</span>BAR</h3>
+        <ul>
+          <li><a href="index.html">START</a></li>
+          <li><a href="daniella.html">DI</a></li>
+          <li><a href="daniel.html">DS</a></li>
+          <li><a href="fidelia.html">FK</a></li>
+          <li><a href="marcus.html">MS</a></li>
+          <li><a href="sandra.html">SE</a></li>
+        </ul>
+        z
+        <div class="dropdown">
+          <button class="dropbtn">Meny</button>
+          <div class="dropdown-content">
+            <a href="index.html">START</a>
+            <a href="daniella.html">DI</a>
+            <a href="daniel.html">DS</a>
+            <a href="fidelia.html">FK</a>
+            <a href="marcus.html">MS</a>
+            <a href="sandra.html">SE</a>
+          </div>
+        </div>
+
+        <img src="images/header.jpg" id="headerimg" alt="headerimg" />
+      </nav>
+
+      <div class="side1">
+        <form>
+          <label for="contact"
+            >Vill du kontakta oss? <br />
+            fyll i formuläret så återkommer vi till dig! <br
+          /></label>
+
+          <textarea name="message" id="msg" cols="30" rows="10" placeholder="Ditt meddelande"></textarea>
+          <br />
+          <label for="epost">Fyll i din epostadress!</label>
+          <br />
+          <input type="email" name="email" placeholder="exempel@exempel.se" />
+          <br />
+          <button class="btn">Skicka!</button>
+        </form>
+      </div>
+
+      <div class="side2"></div>
+      <!--Extra sidebar för bättre struktur på sidan. Denna behöver ej använda.-->
+      <div class="main">
+        <div id="heading"><h1>Välkommen till Grupp 8 startsida!</h1></div>
+        <!--Här kan ha en rubrik utanför den andra diven om man vill-->
+        <div class="dittnamn"><!--Denna div döper man till sitt eget namn och sedan kan man designa fritt--></div>
+      </div>
+      <footer>
+        <div class="form-container">
+          <form id="newsletter">
+            <label for="email">Prenumerera på vårt nyhetsbrev!</label><input type="email" name="email" placeholder="exempel@exempel.se" /> <button class="btn">Registrera</button>
+          </form>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
