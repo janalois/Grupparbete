@@ -200,7 +200,7 @@ footer {
   text-align: center;
 }
 /*Styling för responsiv design*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   body {
     background: #ecf0f1;
   }
@@ -321,4 +321,27 @@ footer {
   .dropdown:hover .dropbtn {
     background-color: #c42e26;
   }
+}
+
+.btn {
+  display: block;
+  background-color: #ff3f34;
+  color: white;
+  padding: 10px 30px;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#msg {
+  width: 100%;
+}
+
+#newsletter {
+  width: 100%;
+}
+
+#email {
+  width: 100%;
 }
