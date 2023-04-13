@@ -321,20 +321,18 @@ footer {
   .dropdown:hover .dropbtn {
     background-color: #c42e26;
   }
+  .btn {
+    display: block;
+    background-color: #ff3f34;
+    color: white;
+    padding: 10px 30px;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
-.btn {
-  display: block;
-  background-color: #ff3f34;
-  color: white;
-  padding: 10px 30px;
-  font-size: 16px;
-  border: none;
-  width: 100%;
-  margin-top: 20px;
-}
-
-/* Styling för responsiva knappar*/
 #msg {
   width: 100%;
 }
