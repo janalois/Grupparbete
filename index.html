@@ -3,10 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Titel</title>
+    <title>Start</title>
   </head>
   <body>
     <div class="container">
@@ -21,7 +19,6 @@
           <li><a href="marcus.html">MS</a></li>
           <li><a href="sandra.html">SE</a></li>
         </ul>
-
         <div class="dropdown">
           <button class="dropbtn">Meny</button>
           <div class="dropdown-content">
@@ -33,27 +30,23 @@
             <a href="sandra.html">SE</a>
           </div>
         </div>
-
         <img src="images/header.jpg" id="headerimg" alt="headerimg" />
       </nav>
-
       <div class="side1">
-        <form>
-          <label for="contact"
-            >Vill du kontakta oss? <br />
-            fyll i formuläret så återkommer vi till dig! <br
-          /></label>
-
-          <textarea name="message" id="msg" cols="30" rows="10" placeholder="Ditt meddelande"></textarea>
+        <form id="contact" autocomplete="off">
+          <label for="contact">
+            Vill du kontakta oss? <br />
+            fyll i formuläret så återkommer vi till dig!<br />
+          </label>
+          <textarea name="message" id="msg" cols="30" rows="10" placeholder="Ditt meddelande" required></textarea>
           <br />
           <label for="epost">Fyll i din epostadress!</label>
           <br />
-          <input id="email" type="email" name="email" placeholder="exempel@exempel.se" />
+          <input id="email" type="email" name="email" placeholder="exempel@exempel.se" required />
           <br />
-          <button class="btn">Skicka!</button>
+          <button class="btn1">Skicka!</button>
         </form>
       </div>
-
       <div class="side2"></div>
       <!--Extra sidebar för bättre struktur på sidan. Denna behöver ej använda.-->
       <div class="main">
@@ -64,7 +57,9 @@
       <footer>
         <div class="form-container">
           <form id="newsletter">
-            <label for="email">Prenumerera på vårt nyhetsbrev!</label><input type="email" name="email" placeholder="exempel@exempel.se" /> <button class="btn">Registrera</button>
+            <label for="email">Prenumerera på vårt nyhetsbrev!</label>
+            <input type="email" name="email" placeholder="exempel@exempel.se" required />
+            <button class="btn2">Registrera</button>
           </form>
         </div>
       </footer>

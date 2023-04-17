@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alkatra&family=Comfortaa:wght@400;700&family=Montserrat:wght@100;600&family=Roboto:wght@300&display=swap" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Marcus Siming</title>
   </head>
   <body>
@@ -35,19 +33,18 @@
         <img src="images/header.jpg" id="headerimg" alt="headerimg" />
       </nav>
       <div class="side1">
-        <form>
+        <form id="contact" autocomplete="off">
           <label for="contact"
             >Vill du kontakta oss? <br />
-            fyll i formuläret så återkommer vi till dig! <br
-          /></label>
-
-          <textarea name="message" id="msg" cols="30" rows="10" placeholder="Ditt meddelande"></textarea>
+            fyll i formuläret så återkommer vi till dig! <br />
+          </label>
+          <textarea name="message" id="msg" cols="30" rows="10" placeholder="Ditt meddelande" required></textarea>
           <br />
           <label for="epost">Fyll i din epostadress!</label>
           <br />
-          <input type="email" name="email" placeholder="exempel@exempel.se" />
+          <input id="email" type="email" name="email" placeholder="exempel@exempel.se" required />
           <br />
-          <button class="btn">Skicka!</button>
+          <button class="btn1">Skicka!</button>
         </form>
       </div>
       <div class="side2"></div>
@@ -104,7 +101,9 @@
       <footer>
         <div class="form-container">
           <form id="newsletter">
-            <label for="email">Prenumerera på vårt nyhetsbrev!</label><input type="email" name="email" placeholder="exempel@exempel.se" /> <button class="btn">Registrera</button>
+            <label for="email">Prenumerera på vårt nyhetsbrev!</label>
+            <input type="email" name="email" placeholder="exempel@exempel.se" required />
+            <button class="btn2">Registrera</button>
           </form>
         </div>
       </footer>
